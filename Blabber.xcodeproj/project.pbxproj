@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		159E508C2BD0C9190090FD01 /* BlabberApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159E508B2BD0C9190090FD01 /* BlabberApp.swift */; };
-		159E508E2BD0C9190090FD01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159E508D2BD0C9190090FD01 /* ContentView.swift */; };
-		159E50902BD0C91A0090FD01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 159E508F2BD0C91A0090FD01 /* Assets.xcassets */; };
+		159E508E2BD0C9190090FD01 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159E508D2BD0C9190090FD01 /* LoginView.swift */; };
 		159E50932BD0C91A0090FD01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 159E50922BD0C91A0090FD01 /* Preview Assets.xcassets */; };
 		159E509D2BD0C91A0090FD01 /* BlabberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159E509C2BD0C91A0090FD01 /* BlabberTests.swift */; };
 		159E50A72BD0C91A0090FD01 /* BlabberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159E50A62BD0C91A0090FD01 /* BlabberUITests.swift */; };
 		159E50A92BD0C91A0090FD01 /* BlabberUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159E50A82BD0C91A0090FD01 /* BlabberUITestsLaunchTests.swift */; };
+		159E50BD2BD0C96F0090FD01 /* 19919.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 159E50B92BD0C96F0090FD01 /* 19919.ttf */; };
+		159E50BE2BD0C96F0090FD01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 159E50BA2BD0C96F0090FD01 /* Assets.xcassets */; };
+		159E50BF2BD0C96F0090FD01 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 159E50BB2BD0C96F0090FD01 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +38,17 @@
 /* Begin PBXFileReference section */
 		159E50882BD0C9190090FD01 /* Blabber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blabber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		159E508B2BD0C9190090FD01 /* BlabberApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlabberApp.swift; sourceTree = "<group>"; };
-		159E508D2BD0C9190090FD01 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		159E508F2BD0C91A0090FD01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		159E508D2BD0C9190090FD01 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		159E50922BD0C91A0090FD01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		159E50982BD0C91A0090FD01 /* BlabberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlabberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		159E509C2BD0C91A0090FD01 /* BlabberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlabberTests.swift; sourceTree = "<group>"; };
 		159E50A22BD0C91A0090FD01 /* BlabberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlabberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		159E50A62BD0C91A0090FD01 /* BlabberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlabberUITests.swift; sourceTree = "<group>"; };
 		159E50A82BD0C91A0090FD01 /* BlabberUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlabberUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		159E50B92BD0C96F0090FD01 /* 19919.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 19919.ttf; sourceTree = "<group>"; };
+		159E50BA2BD0C96F0090FD01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		159E50BB2BD0C96F0090FD01 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		159E50C02BD0CB3A0090FD01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +99,10 @@
 		159E508A2BD0C9190090FD01 /* Blabber */ = {
 			isa = PBXGroup;
 			children = (
+				159E50C02BD0CB3A0090FD01 /* Info.plist */,
+				159E50BC2BD0C96F0090FD01 /* Assets */,
 				159E508B2BD0C9190090FD01 /* BlabberApp.swift */,
-				159E508D2BD0C9190090FD01 /* ContentView.swift */,
-				159E508F2BD0C91A0090FD01 /* Assets.xcassets */,
+				159E508D2BD0C9190090FD01 /* LoginView.swift */,
 				159E50912BD0C91A0090FD01 /* Preview Content */,
 			);
 			path = Blabber;
@@ -125,6 +131,16 @@
 				159E50A82BD0C91A0090FD01 /* BlabberUITestsLaunchTests.swift */,
 			);
 			path = BlabberUITests;
+			sourceTree = "<group>";
+		};
+		159E50BC2BD0C96F0090FD01 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				159E50B92BD0C96F0090FD01 /* 19919.ttf */,
+				159E50BA2BD0C96F0090FD01 /* Assets.xcassets */,
+				159E50BB2BD0C96F0090FD01 /* LICENSE */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +247,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				159E50BD2BD0C96F0090FD01 /* 19919.ttf in Resources */,
+				159E50BE2BD0C96F0090FD01 /* Assets.xcassets in Resources */,
 				159E50932BD0C91A0090FD01 /* Preview Assets.xcassets in Resources */,
-				159E50902BD0C91A0090FD01 /* Assets.xcassets in Resources */,
+				159E50BF2BD0C96F0090FD01 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				159E508E2BD0C9190090FD01 /* ContentView.swift in Sources */,
+				159E508E2BD0C9190090FD01 /* LoginView.swift in Sources */,
 				159E508C2BD0C9190090FD01 /* BlabberApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +443,7 @@
 				DEVELOPMENT_TEAM = 3WR7CH3L52;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Blabber/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +473,7 @@
 				DEVELOPMENT_TEAM = 3WR7CH3L52;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Blabber/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
