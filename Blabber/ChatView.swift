@@ -67,13 +67,19 @@ struct ChatView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .focused($isFocused)
                 .onSubmit {
-                    // On submission
-
+                    Task {
+                      try await model.say(message)
+                      message = ""
+                    }
                     isFocused = true
                 }
 
                 Button {
                     // Send action
+                    Task {
+                      try await model.say(message)
+                      message = ""
+                    }
                 } label: {
                     Image(systemName: "arrow.up.circle.fill")
                       .font(.title)

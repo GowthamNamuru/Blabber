@@ -17,6 +17,7 @@ class BlabberModel: ObservableObject {
     /// Current live updates
     @Published var messages: [Message] = []
 
+    @MainActor
     func chat() async throws {
         guard let query = userName.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
               let url = URL(string: "http://localhost:8080/chat/room?\(query)") else {
@@ -41,6 +42,24 @@ class BlabberModel: ObservableObject {
 
     @MainActor
     private func readMessages(stream: URLSession.AsyncBytes) async throws {
+    }
+
+    func say(_ text: String, isSystemMessage: Bool = false) async throws {
+        guard !text.isEmpty,
+              let url = URL(string: "http://localhost:8080/chat/say") else {
+            throw "Invalid Request"
+        }
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.httpBody = try JSONEncoder().encode(
+            Message(id: UUID(), user: isSystemMessage ? nil : userName, message: text, date: Date())
+        )
+        let (_, response) = try await liveURLSession.data(for: request, delegate: nil)
+
+        guard (response as? HTTPURLResponse)?.statusCode == 200 else {
+            throw "The server responded with an error."
+        }
     }
 
     private var liveURLSession: URLSession = {

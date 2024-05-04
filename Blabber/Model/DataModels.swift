@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Message: Identifiable {
+struct Message: Codable, Identifiable {
     let id: UUID
     let user: String?
     let message: String
