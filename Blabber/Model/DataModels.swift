@@ -22,3 +22,7 @@ extension Message {
     self.message = message
   }
 }
+
+struct ServerStatus: Codable {
+  let activeUsers: Int
+}

@@ -42,6 +42,25 @@ class BlabberModel: ObservableObject {
 
     @MainActor
     private func readMessages(stream: URLSession.AsyncBytes) async throws {
+        var iterator = stream.lines.makeAsyncIterator()
+
+        guard let first = try await iterator.next() else {
+            throw "No response from server"
+        }
+
+        guard let data = first.data(using: .utf8),
+              let status = try? JSONDecoder().decode(ServerStatus.self, from: data) else {
+            throw "Invalid response from server"
+        }
+
+        messages.append(Message(message: "\(status.activeUsers) active users"))
+
+        for try await line in stream.lines {
+          if let data = line.data(using: .utf8),
+            let update = try? JSONDecoder().decode(Message.self, from: data) {
+            messages.append(update)
+          }
+        }
     }
 
     func say(_ text: String, isSystemMessage: Bool = false) async throws {
