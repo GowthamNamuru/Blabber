@@ -11,6 +11,7 @@ struct LoginView: View {
 
     @State var username = ""
     @State var isDisplayingChat = false
+    @State var model = BlabberModel()
 
     var body: some View {
         VStack {
@@ -22,13 +23,16 @@ struct LoginView: View {
                 TextField(text: $username, prompt: Text("Username")) { }
                     .textFieldStyle(.roundedBorder)
 
-                Button(action: {}, label: {
+                Button(action: {
+                    model.userName = username
+                    self.isDisplayingChat = true
+                }, label: {
                     Image(systemName: "arrow.right.circle.fill")
                         .font(.title)
                         .foregroundStyle(Color.teal)
                 })
                 .sheet(isPresented: $isDisplayingChat, onDismiss: {}, content: {
-                    
+                    ChatView(model: model)
                 })
             }
             .padding(.horizontal)
