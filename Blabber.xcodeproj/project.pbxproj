@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		154032C92BE372EA008926CA /* BlabberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154032C82BE372EA008926CA /* BlabberModel.swift */; };
 		154032CB2BE375FF008926CA /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154032CA2BE375FF008926CA /* DataModels.swift */; };
+		154032CD2BE62E2A008926CA /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154032CC2BE62E2A008926CA /* MessageView.swift */; };
 		159E508C2BD0C9190090FD01 /* BlabberApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159E508B2BD0C9190090FD01 /* BlabberApp.swift */; };
 		159E508E2BD0C9190090FD01 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159E508D2BD0C9190090FD01 /* LoginView.swift */; };
 		159E50932BD0C91A0090FD01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 159E50922BD0C91A0090FD01 /* Preview Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		154032C82BE372EA008926CA /* BlabberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlabberModel.swift; sourceTree = "<group>"; };
 		154032CA2BE375FF008926CA /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
+		154032CC2BE62E2A008926CA /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		159E50882BD0C9190090FD01 /* Blabber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blabber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		159E508B2BD0C9190090FD01 /* BlabberApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlabberApp.swift; sourceTree = "<group>"; };
 		159E508D2BD0C9190090FD01 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				159E508D2BD0C9190090FD01 /* LoginView.swift */,
 				159E50912BD0C91A0090FD01 /* Preview Content */,
 				159E50C22BD0CCB00090FD01 /* ChatView.swift */,
+				154032CC2BE62E2A008926CA /* MessageView.swift */,
 			);
 			path = Blabber;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				154032CD2BE62E2A008926CA /* MessageView.swift in Sources */,
 				154032C92BE372EA008926CA /* BlabberModel.swift in Sources */,
 				159E508E2BD0C9190090FD01 /* LoginView.swift in Sources */,
 				154032CB2BE375FF008926CA /* DataModels.swift in Sources */,
