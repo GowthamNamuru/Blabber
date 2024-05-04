@@ -33,7 +33,7 @@ struct MessageView: View {
                             .strokeBorder(color(for: message.user, myUser: myUser), lineWidth: 1.0)
                     }
             })
-            if myUser != message.user || message.user != nil {
+            if myUser != message.user && message.user != nil {
                 Spacer()
             }
         }
