@@ -92,6 +92,13 @@ struct ChatView: View {
         }, message: {
             Text(lastErrorMessage)
         })
+        .task {
+            do {
+                try await model.chat()
+            } catch {
+                lastErrorMessage = error.localizedDescription
+            }
+        }
     }
 }
 
